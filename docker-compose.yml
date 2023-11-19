@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  tszalama_urlshortener_mongo_db:
+    image: mongo:latest
+    container_name: "tszalama_urlshortener_mongo_db"
+    ports:
+      - 27017:27017
+    networks:
+      - tszalama_urlshortener_network
+    volumes:
+      - tszalama_urlshortener_data:/data/db
+
+networks:
+  tszalama_urlshortener_network:
+    driver: bridge
+
+volumes:
+  tszalama_urlshortener_data:
