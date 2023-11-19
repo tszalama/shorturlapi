@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 import java.util.Random;
 
 @Service
-public class UrlIdGenerationServiceImpl implements UrlIDGeneratorService {
+public class UrlIdGeneratorServiceImpl implements UrlIDGeneratorService {
     private final ShortUrlRepository shortUrlRepository;
 
     @Autowired
-    public UrlIdGenerationServiceImpl(ShortUrlRepository shortUrlRepository) {
+    public UrlIdGeneratorServiceImpl(ShortUrlRepository shortUrlRepository) {
         this.shortUrlRepository = shortUrlRepository;
     }
 

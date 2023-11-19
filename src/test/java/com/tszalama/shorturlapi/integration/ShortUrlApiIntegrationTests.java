@@ -6,6 +6,7 @@ import com.tszalama.shorturlapi.dto.ShortUrlCreationRequestDTO;
 import com.tszalama.shorturlapi.dto.ShortUrlCreationResponseDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -61,5 +62,20 @@ public class ShortUrlApiIntegrationTests {
         log.info("Url with id " + createdUrlId + " shortened and validated");
 
         testIteration++;
+    }
+
+    @Test
+    public void invalidUrlIdNotFound() {
+        //TODO: implement
+    }
+
+    @Test
+    public void noUrlInRequestBody() {
+        //TODO: implement
+    }
+
+    @Test
+    public void invalidUrlInRequestBody() {
+        //TODO: implement
     }
 }
