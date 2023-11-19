@@ -34,7 +34,7 @@ public class ShortUrlServiceImpl implements ShortUrlService {
     //Return a unique url id that can later be used to access the given url
     @Override
     public ShortUrlCreationResponseDTO shortenUrl(ShortUrlCreationRequestDTO shortUrlCreationRequestDTO) {
-        if(shortUrlCreationRequestDTO.getUrl().isBlank()) {
+        if(shortUrlCreationRequestDTO == null || shortUrlCreationRequestDTO.getUrl().isBlank()) {
             throw new IllegalArgumentException("Request must contain URL"); //TODO: replace with custom exception + global exception handler
         }
         final String urlId = urlIdGeneratorService.getUniqueUrlId();
