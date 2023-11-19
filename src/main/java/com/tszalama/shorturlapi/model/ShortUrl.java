@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collation = "ShortUrl")
+@Document(collection = "ShortUrl")
 public class ShortUrl {
     @Id
     private String urlId;
