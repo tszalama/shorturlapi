@@ -24,4 +24,4 @@ Here are some example requests you can make:
 
 2. **Use Short URL**
 
-   Send a GET request to `localhost:9090/oDj35mzX`.
+   Send a GET request to `localhost:9090/oDj35mzX` (replace oDj35mzX with the id you got from the first request).
