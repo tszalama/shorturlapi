@@ -1,4 +1,4 @@
-package model;
+package com.tszalama.shorturlapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

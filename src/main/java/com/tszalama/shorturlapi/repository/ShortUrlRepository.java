@@ -1,6 +1,6 @@
-package repository;
+package com.tszalama.shorturlapi.repository;
 
-import model.ShortUrl;
+import com.tszalama.shorturlapi.model.ShortUrl;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
