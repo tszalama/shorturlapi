@@ -11,6 +11,15 @@ services:
     volumes:
       - tszalama_urlshortener_data:/data/db
 
+  tszalama_shorturlapi:
+    image: tszalama/shorturlapi:v1.0
+    ports:
+      - 9090:8080
+    networks:
+      - tszalama_urlshortener_network
+    depends_on:
+      - tszalama_urlshortener_mongo_db
+
 networks:
   tszalama_urlshortener_network:
     driver: bridge
